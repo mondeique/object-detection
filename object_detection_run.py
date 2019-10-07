@@ -16,10 +16,10 @@ from utils import visualization_utils as vis_util
 
 
 # Pre trained graph model PATH
-MODEL_NAME = 'MODEL_DIR'
+MODEL_NAME = 'faster_rcnn_resnet101'
 PATH_TO_CKPT = os.path.join(MODEL_NAME, 'frozen_inference_graph.pb')
 # Path to label map
-PATH_TO_LABELS = os.path.join('label_map', 'LABEL_NAME.pbtxt')
+PATH_TO_LABELS = os.path.join('label_map', 'mscoco_label_map.pbtxt')
 NUM_CLASSES = 90
 
 PATH_TO_TEST_IMAGES_DIR = 'test_images/test_coco'
