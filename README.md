@@ -12,6 +12,7 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ```
 ## TODO 
 
+- [ ] dev env setting (ubuntu 18.04 or Windows) : decide on 2019.10.09
 - [ ] GPU testing
 - [ ] protobuf testing
 - [ ] Object-Detection API test with faster rcnn resnet101
