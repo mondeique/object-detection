@@ -50,7 +50,6 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ### ssd mobilenet v2
 ![result_img1](./test_result/ssd_mobilenet_v2/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v2/result_img3.jpg)
-* Conclusion : ssd mobilenet 계열이 우리의 task에 가장 드러맞았다.
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
