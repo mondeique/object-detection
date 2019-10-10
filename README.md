@@ -35,13 +35,25 @@ $ python object_detection/builders/model_builder_test.py
 $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ```
 ## Test Result
-### Faster R-CNN resnet101
-![result_img1](./test_result/faster_rcnn_resnet101/result_img1.jpg)
-![result_img2](./test_result/faster_rcnn_resnet101/result_img4.jpg)
-- 전체적으로 괜찮은 성능을 보였으나 그대로 자르기에는 많이 부족한 부분이 보인다.
+### Faster R-CNN with resnet101
+![result_img](./test_result/faster_rcnn_resnet101/result_img2.jpg)
+![result_img](./test_result/faster_rcnn_resnet101/result_img3.jpg)
+### ssd inception v2
+![result_img1](./test_result/faster_rcnn_resnet101/result_img2.jpg)
+![result_img1](./test_result/faster_rcnn_resnet101/result_img3.jpg)
+### ssd resnet50 v1 fpn
+![result_img1](./test_result/ssd_resnet50_v1_fpn/result_img2.jpg)
+![result_img1](./test_result/ssd_resnet50_v1_fpn/result_img3.jpg)
+### ssd mobilenet v1
+![result_img1](./test_result/ssd_mobilenet_v1/result_img2.jpg)
+![result_img1](./test_result/ssd_mobilenet_v1/result_img3.jpg)
+### ssd mobilenet v2
+![result_img1](./test_result/ssd_mobilenet_v2/result_img2.jpg)
+![result_img1](./test_result/ssd_mobilenet_v2/result_img3.jpg)
+* Conclusion : ssd mobilenet 계열이 우리의 task에 가장 드러맞았다.
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
 - [X] GPU testing
 - [X] protobuf testing : 2019.10.10
-- [X] Object-Detection API test with faster rcnn resnet101 : 2019.10.10
+- [X] Object-Detection API test : 2019.10.10
