@@ -15,7 +15,7 @@ $ conda activate mondeique
 (mondeique) $ sudo pip install matplotlib 
 ```
 - 편의를 위해 conda virtualenv는 생략했다. (mondeique)
-- Object Detection API는 protocol buffer를 이용한다. 
+- Object Detection API는 protocol buffer를 이용한다. (실행시 아래 test를 계속 해줘야 한다)
 ```
 $ git clone http://github.com/tensorflow/models
 $ cd models/research
@@ -35,9 +35,18 @@ $ python object_detection/builders/model_builder_test.py
 $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ```
 ## Test Result
-### Faster R-CNN with resnet101
+### Faster R-CNN resnet101
 ![result_img](./test_result/faster_rcnn_resnet101/result_img2.jpg)
 ![result_img](./test_result/faster_rcnn_resnet101/result_img3.jpg)
+### Faster R-CNN resnet50
+![result_img](./test_result/faster_rcnn_resnet50/result_img2.jpg)
+![result_img](./test_result/faster_rcnn_resnet50/result_img3.jpg)
+### Faster R-CNN inception v2
+![result_img](./test_result/faster_rcnn_inception_v2/result_img2.jpg)
+![result_img](./test_result/faster_rcnn_inception_v2/result_img3.jpg)
+### Mask R-CNN inception v2
+![result_img](./test_result/mask_rcnn_inception_v2/result_img2.jpg)
+![result_img](./test_result/mask_rcnn_inception_v2/result_img3.jpg)
 ### ssd inception v2
 ![result_img1](./test_result/ssd_inception_v2/result_img2.jpg)
 ![result_img1](./test_result/ssd_inception_v2/result_img3.jpg)
@@ -56,3 +65,4 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 - [X] GPU testing
 - [X] protobuf testing : 2019.10.10
 - [X] Object-Detection API test : 2019.10.10
+- [ ] fine-tuning coding 
