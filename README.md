@@ -7,6 +7,7 @@ https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc
 ```
 $ conda activate mondeique
 (mondeique) $ sudo apt-get install protobuf-compiler python-pil python-lxml python-tk
+(mondeique) $ sudo pip install pillow
 (mondeique) $ sudo pip install jupyter
 (mondeique) $ sudo pip install matplotlib 
 ```
@@ -16,7 +17,7 @@ $ conda activate mondeique
 $ git clone http://github.com/tensorflow/models
 $ cd models/research
 
-$ protoc object_detection/protos*.proto --python_out=.
+$ protoc object_detection/protos/*.proto --python_out=.
 ```
 - 환경변수를 설정해준다.
 ```
