@@ -39,8 +39,8 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ![result_img](./test_result/faster_rcnn_resnet101/result_img2.jpg)
 ![result_img](./test_result/faster_rcnn_resnet101/result_img3.jpg)
 ### ssd inception v2
-![result_img1](./test_result/faster_rcnn_resnet101/result_img2.jpg)
-![result_img1](./test_result/faster_rcnn_resnet101/result_img3.jpg)
+![result_img1](./test_result/ssd_inception_v2/result_img2.jpg)
+![result_img1](./test_result/ssd_inception_v2/result_img3.jpg)
 ### ssd resnet50 v1 fpn
 ![result_img1](./test_result/ssd_resnet50_v1_fpn/result_img2.jpg)
 ![result_img1](./test_result/ssd_resnet50_v1_fpn/result_img3.jpg)
