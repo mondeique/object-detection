@@ -3,6 +3,9 @@ Object-Detection API using MSCOCO dataset from Tensorflow
 
 ## How to install 
 [Object-Detection API Install Guide](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
+```
+$ sudo pip install -r requirements.txt
+```
 ### protocol buffer test
 ```
 $ conda activate mondeique
@@ -30,10 +33,6 @@ $ python object_detection/builders/model_builder_test.py
 ## How to run 
 ```
 $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
-```
-or
-```
-$ CUDA_VISIBLE_DEVICES=0 python object_detection_ssd_run.py
 ```
 ## Test Result
 ### Faster R-CNN resnet101
