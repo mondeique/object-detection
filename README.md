@@ -34,29 +34,29 @@ $ python object_detection/builders/model_builder_test.py
 ```
 $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ```
+## Data Structure
+__TO BE ADDED....__
 ## Test Result
-### Faster R-CNN resnet101
+### Minimal Working Test
+#### Faster R-CNN resnet101
 ![result_img](./test_result/faster_rcnn_resnet101/result_img2.jpg)
 ![result_img](./test_result/faster_rcnn_resnet101/result_img3.jpg)
-### Faster R-CNN resnet50
-![result_img](./test_result/faster_rcnn_resnet50/result_img2.jpg)
-![result_img](./test_result/faster_rcnn_resnet50/result_img3.jpg)
-### Faster R-CNN inception v2
+#### Faster R-CNN inception v2
 ![result_img](./test_result/faster_rcnn_inception_v2/result_img2.jpg)
 ![result_img](./test_result/faster_rcnn_inception_v2/result_img3.jpg)
-### Mask R-CNN inception v2
+#### Mask R-CNN inception v2
 ![result_img](./test_result/mask_rcnn_inception_v2/result_img2.jpg)
 ![result_img](./test_result/mask_rcnn_inception_v2/result_img3.jpg)
-### ssd inception v2
+#### ssd inception v2
 ![result_img1](./test_result/ssd_inception_v2/result_img2.jpg)
 ![result_img1](./test_result/ssd_inception_v2/result_img3.jpg)
-### ssd resnet50 v1 fpn
+#### ssd resnet50 v1 fpn
 ![result_img1](./test_result/ssd_resnet50_v1_fpn/result_img2.jpg)
 ![result_img1](./test_result/ssd_resnet50_v1_fpn/result_img3.jpg)
-### ssd mobilenet v1
+#### ssd mobilenet v1
 ![result_img1](./test_result/ssd_mobilenet_v1/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1/result_img3.jpg)
-### ssd mobilenet v2
+#### ssd mobilenet v2
 ![result_img1](./test_result/ssd_mobilenet_v2/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v2/result_img3.jpg)
 ## TODO 
