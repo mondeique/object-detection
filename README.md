@@ -67,6 +67,4 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 - [X] Object-Detection API test : 2019.10.10
 - [ ] fine-tuning coding
 - [ ] error analysis : 아예 못 잡는 경우 / 작게 잡는 경우
-ㅇ
-ㅇㅖ
 
