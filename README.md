@@ -1,5 +1,5 @@
 # object-detection
-Object-Detection API using MSCOCO dataset from Tensorflow
+Object-Detection API using MSCOCO dataset from Tensorflow & customized object-detection
 
 ## How to install 
 [Object-Detection API Install Guide](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
@@ -14,7 +14,7 @@ $ conda activate mondeique
 (mondeique) $ sudo pip install jupyter
 (mondeique) $ sudo pip install matplotlib 
 ```
-- 편의를 위해 conda virtualenv는 생략했다. (mondeique)
+> 편의를 위해 conda virtualenv는 생략했다. (mondeique)
 - Object Detection API는 protocol buffer를 이용한다. (실행시 아래 test를 계속 해줘야 한다)
 ```
 $ git clone http://github.com/tensorflow/models
@@ -30,10 +30,12 @@ $ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 ```
 $ python object_detection/builders/model_builder_test.py
 ```
-## How to run 
+## How to test with MSCOCO dataset
 ```
 $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ```
+## How to train with customized dataset
+__TO BE ADDED....__
 ## Data Structure
 __TO BE ADDED....__
 ## Test Result
@@ -65,9 +67,9 @@ __TO BE ADDED....__
 - [X] GPU testing
 - [X] protobuf testing : 2019.10.10
 - [X] Object-Detection API test : 2019.10.10
-- [ ] split training / evaluation csv : 2019.10.11
-- [ ] data-explorer from each csv : 2019.10.11
-- [ ] generate_tfrecord.py : 2019.10.11
+- [X] split training / evaluation csv : 2019.10.11
+- [X] data-explorer from each csv : 2019.10.11
+- [X] generate_tfrecord.py : 2019.10.11
 - [ ] pipeline.config to ssd mobilenet으로 변경 : 2019.10.12
 - [ ] pbtxt 생성 : 2019.10.12
 - [ ] model_main.py : training : 2019.10.12-2019.10.14
