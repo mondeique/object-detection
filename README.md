@@ -65,6 +65,8 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 - [X] GPU testing
 - [X] protobuf testing : 2019.10.10
 - [X] Object-Detection API test : 2019.10.10
-- [ ] fine-tuning coding
+- [ ] create_bag_tf_record.py 
+- [ ] fine-tuning config code 
+- [ ] training + eval
 - [ ] error analysis : 아예 못 잡는 경우 / 작게 잡는 경우
 
