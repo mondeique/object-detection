@@ -65,10 +65,11 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 - [X] GPU testing
 - [X] protobuf testing : 2019.10.10
 - [X] Object-Detection API test : 2019.10.10
-- [ ] split training / evaluation csv
-- [ ] data-explorer from each csv 
-- [ ] generate_tfrecord.py
-- [ ] fine-tuning config code 
-- [ ] training + test
+- [ ] split training / evaluation csv : 2019.10.11
+- [ ] data-explorer from each csv : 2019.10.11
+- [ ] generate_tfrecord.py : 2019.10.11
+- [ ] pipeline.config to ssd mobilenet으로 변경 : 2019.10.12
+- [ ] pbtxt 생성 : 2019.10.12
+- [ ] model_main.py : training : 2019.10.12-2019.10.14
 - [ ] error analysis 
 
