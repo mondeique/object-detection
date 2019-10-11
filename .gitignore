@@ -1,2 +1,8 @@
 .DS_Store
 .idea/*
+
+# handbag image data
+images/
+
+# jupyter checkpoints
+.ipynb_checkpoints/
