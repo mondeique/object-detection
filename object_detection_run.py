@@ -16,13 +16,13 @@ from utils import visualization_utils as vis_util
 
 
 # Pre trained graph model PATH
-MODEL_NAME = 'faster_rcnn_resnet101'
+MODEL_NAME = 'ssd_mobilenet_v1'
 PATH_TO_CKPT = os.path.join(MODEL_NAME, 'frozen_inference_graph.pb')
 # Path to label map
 PATH_TO_LABELS = os.path.join('label_map', 'mscoco_label_map.pbtxt')
 NUM_CLASSES = 90
 
-PATH_TO_TEST_IMAGES_DIR = 'test_images/test_coco'
+PATH_TO_TEST_IMAGES_DIR = 'test_images'
 TEST_IMAGE_PATHS = [os.path.join(PATH_TO_TEST_IMAGES_DIR, img) for img in os.listdir(PATH_TO_TEST_IMAGES_DIR)]
 TEST_SAVE_PATH = 'test_result/{}'.format(MODEL_NAME)
 
