@@ -6,3 +6,8 @@ images/
 
 # jupyter checkpoints
 .ipynb_checkpoints/
+
+# model ckpt file
+training/model.ckpt.*
+
+
