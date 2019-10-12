@@ -130,3 +130,5 @@ $ python model_main.py --pipeline_config_path=pipeline.config --model_dir=traini
 - [X] pbtxt 생성 : 2019.10.12
 - [X] model_main.py : training : 2019.10.12-2019.10.14
 
+### Reference
+> [tensorflow offical object-detection models](https://github.com/tensorflow/models/tree/master/research/object_detection)
