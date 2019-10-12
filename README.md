@@ -6,7 +6,7 @@ Object-Detection API using MSCOCO dataset from Tensorflow & customized object-de
 ```
 $ sudo pip install -r requirements.txt
 ```
-#### protocol buffer test
+### protocol buffer test
 ```
 $ conda activate mondeique
 (mondeique) $ sudo apt-get install protobuf-compiler python-pil python-lxml python-tk
@@ -30,11 +30,11 @@ $ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 ```
 $ python object_detection/builders/model_builder_test.py
 ```
-#### How to test with MSCOCO dataset
+### How to test with MSCOCO dataset
 ```
 $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ```
-#### install pycocotools
+### install pycocotools
 - cocoapi를 local에 clone한다.
 ```
 $ git clone https://github.com/philferriere/cocoapi.git
