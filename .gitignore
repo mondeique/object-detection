@@ -9,5 +9,12 @@ images/
 
 # model ckpt file
 training/model.ckpt.*
+training/model.ckpt-*
 
+# data record file (upload source error)
+data/*.record
 
+# training file
+training/checkpoint
+training/events.*
+training/graph.*
