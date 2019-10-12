@@ -30,7 +30,7 @@ $ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 ```
 $ python object_detection/builders/model_builder_test.py
 ```
-## How to test with MSCOCO dataset
+### How to test with MSCOCO dataset
 ```
 $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ```
@@ -38,15 +38,17 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 
 1. split labels for training & evaluation with split_labels.ipynb
 2. download image from s3 with [data-explorer](https://github.com/mondeique/data-explorer)
-3. generate_tfrecord.py 
+3. python generate_tfrecord.py 
 ```
 $ python generate_tfrecord.py --csv_input=data/training_bag_csv --output_path=data/train.record --image_path=images/
 $ python generate_tfrecord.py --csv_input=data/test_bag_csv --output_path=data/test.record --image_path=images/
 ```
 
 4. change pipeline.config with selected network
+> 원하는 network config 변경 가능 : hyperparameter-tuning (ex : batch_size, learning rate ...)
 5. create object-detection.pbtxt
-6. model_main.py
+> item - id - class
+6. python model_main.py
 ```
 $ python model_main.py --pipeline_config_path=pipeline.config --model_dir=training/ --num_train_steps=${NUM_TRAIN_STEPS} \
     --sample_1_of_n_eval_examples=$SAMPLE_1_OF_N_EVAL_EXAMPLES \
