@@ -35,9 +35,54 @@ $ python object_detection/builders/model_builder_test.py
 $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ```
 ## How to train with customized dataset
-__TO BE ADDED....__
+
+1. split labels for training & evaluation with split_labels.ipynb
+2. download image from s3 with [data-explorer](https://github.com/mondeique/data-explorer)
+3. generate_tfrecord.py 
+```
+$ python generate_tfrecord.py --csv_input=data/training_bag_csv --output_path=data/train.record --image_path=images/
+$ python generate_tfrecord.py --csv_input=data/test_bag_csv --output_path=data/test.record --image_path=images/
+```
+
+4. change pipeline.config with selected network
+5. create object-detection.pbtxt
+6. model_main.py
+```
+$ python model_main.py --pipeline_config_path=pipeline.config --model_dir=training/ --num_train_steps=${NUM_TRAIN_STEPS} \
+    --sample_1_of_n_eval_examples=$SAMPLE_1_OF_N_EVAL_EXAMPLES \
+    --alsologtostderr
+```
 ## Data Structure
-__TO BE ADDED....__
+```
+  Project
+  |--- data
+  |    |--- test_bag_csv
+  |    |--- training_bag_csv
+  |    |--- train.record
+  |    |--- test.record
+  |--- images
+       |--- image1.jpg
+       |--- image2.jpg
+       |---
+       ...
+  |--- label_map
+       |--- mscoco_label_map.pbtxt (for test)
+  |--- test_result
+       |--- faster_rcnn_resnet101
+       |--- ssd_mobilenet_v1
+       ...
+  |     
+  |--- training
+       |        
+       |--- model.ckpt 
+       |--- object-detection.pbtxt
+  |--- generate_tfrecord.py
+  |--- model_main.py
+  |--- pipeline.config
+  |--- object_detection_run.py (for test)
+  |--- split_labels.ipynb
+       
+  ```
 ## Test Result
 ### Minimal Working Test
 #### Faster R-CNN resnet101
@@ -70,8 +115,7 @@ __TO BE ADDED....__
 - [X] split training / evaluation csv : 2019.10.11
 - [X] data-explorer from each csv : 2019.10.11
 - [X] generate_tfrecord.py : 2019.10.11
-- [ ] pipeline.config to ssd mobilenet으로 변경 : 2019.10.12
-- [ ] pbtxt 생성 : 2019.10.12
-- [ ] model_main.py : training : 2019.10.12-2019.10.14
-- [ ] error analysis 
+- [X] pipeline.config to ssd mobilenet으로 변경 : 2019.10.12
+- [X] pbtxt 생성 : 2019.10.12
+- [X] model_main.py : training : 2019.10.12-2019.10.14
 
