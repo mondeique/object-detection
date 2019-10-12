@@ -34,7 +34,7 @@ $ python object_detection/builders/model_builder_test.py
 ```
 $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ```
-### install pycocotools
+### How to install pycocotools
 - cocoapi를 local에 clone한다.
 ```
 $ git clone https://github.com/philferriere/cocoapi.git
