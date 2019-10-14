@@ -117,6 +117,18 @@ $ python model_main.py --pipeline_config_path=pipeline.config --model_dir=traini
 #### ssd mobilenet v2
 ![result_img1](./test_result/ssd_mobilenet_v2/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v2/result_img3.jpg)
+### Customized Test
+```
+$ tensorboard --logdir='training'
+```
+```
+$ python export_inference_graph.py --input_type=image_tensor --pipeline_config_path=pipeline.config \
+--trained_checkpoint_prefix=training/model.ckpt-** --output_directory=output/
+```
+#### Batch Size : 24 / number of steps : 100000
+- 48시간 : 25000번 
+### ssd mobilenet v1 for 8600장 handbag dataset
+__TO BE ADDED__
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
@@ -129,6 +141,7 @@ $ python model_main.py --pipeline_config_path=pipeline.config --model_dir=traini
 - [X] pipeline.config to ssd mobilenet으로 변경 : 2019.10.12
 - [X] pbtxt 생성 : 2019.10.12
 - [X] model_main.py : training : 2019.10.12-2019.10.14
+- [ ] test : object_detection_run.py file 수정을 통한 test 과정 : 2019.10.15
 
 ### Reference
 > [tensorflow offical object-detection models](https://github.com/tensorflow/models/tree/master/research/object_detection)
