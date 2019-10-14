@@ -134,4 +134,4 @@ __TO BE ADDED__
 - [ ] test : object_detection_run.py file 수정을 통한 test 과정 : 2019.10.15
 
 ### Reference
-> [tensorflow offical object-detection models](https://github.com/tensorflow/models/tree/master/research/object_detection)
+> [tensorflow official object-detection models](https://github.com/tensorflow/models/tree/master/research/object_detection)
