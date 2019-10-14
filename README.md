@@ -130,6 +130,7 @@ __TO BE ADDED__
 - [X] pipeline.config to ssd mobilenet으로 변경 : 2019.10.12
 - [X] pbtxt 생성 : 2019.10.12
 - [X] model_main.py : training : 2019.10.12-2019.10.14
+- [ ] export_inference_graph.py : 2019.10.15
 - [ ] test : object_detection_run.py file 수정을 통한 test 과정 : 2019.10.15
 
 ### Reference
