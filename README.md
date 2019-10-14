@@ -95,28 +95,17 @@ $ python model_main.py --pipeline_config_path=pipeline.config --model_dir=traini
        
   ```
 ## Test Result
-### Minimal Working Test
+### Minimal Working Test 
+> [More Test Result](https://github.com/mondeique/object-detection/tree/master/test_result)
 #### Faster R-CNN resnet101
 ![result_img](./test_result/faster_rcnn_resnet101/result_img2.jpg)
 ![result_img](./test_result/faster_rcnn_resnet101/result_img3.jpg)
-#### Faster R-CNN inception v2
-![result_img](./test_result/faster_rcnn_inception_v2/result_img2.jpg)
-![result_img](./test_result/faster_rcnn_inception_v2/result_img3.jpg)
-#### Mask R-CNN inception v2
-![result_img](./test_result/mask_rcnn_inception_v2/result_img2.jpg)
-![result_img](./test_result/mask_rcnn_inception_v2/result_img3.jpg)
 #### ssd inception v2
 ![result_img1](./test_result/ssd_inception_v2/result_img2.jpg)
 ![result_img1](./test_result/ssd_inception_v2/result_img3.jpg)
-#### ssd resnet50 v1 fpn
-![result_img1](./test_result/ssd_resnet50_v1_fpn/result_img2.jpg)
-![result_img1](./test_result/ssd_resnet50_v1_fpn/result_img3.jpg)
 #### ssd mobilenet v1
 ![result_img1](./test_result/ssd_mobilenet_v1/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1/result_img3.jpg)
-#### ssd mobilenet v2
-![result_img1](./test_result/ssd_mobilenet_v2/result_img2.jpg)
-![result_img1](./test_result/ssd_mobilenet_v2/result_img3.jpg)
 ### Customized Test
 ```
 $ tensorboard --logdir='training'
