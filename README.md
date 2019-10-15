@@ -135,7 +135,7 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ### ssd mobilenet v1 for 8600장 handbag dataset
 ![result_img1](./test_result/ssd_mobilenet_v1_output/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1_output/result_img3.jpg)
-#### Batch Size : 48 / number of steps : 20000
+#### Batch Size : 16 / number of steps : 20000
 >
 ### ssd mobilenet v1 for 8600장 handbag dataset
 __TOBEADDED__
