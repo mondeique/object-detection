@@ -131,9 +131,14 @@ $ python export_inference_graph.py --input_type=image_tensor --pipeline_config_p
 $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ```
 #### Batch Size : 24 / number of steps : 100000
-> 72h : about 40000 steps..
+> 72h : about 40000 steps
 ### ssd mobilenet v1 for 8600장 handbag dataset
-__TO BE ADDED__
+![result_img1](./test_result/ssd_mobilenet_v1_output/result_img2.jpg)
+![result_img1](./test_result/ssd_mobilenet_v1_output/result_img3.jpg)
+#### Batch Size : 48 / number of steps : 20000
+>
+### ssd mobilenet v1 for 8600장 handbag dataset
+__TOBEADDED__
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
@@ -147,7 +152,7 @@ __TO BE ADDED__
 - [X] pbtxt 생성 : 2019.10.12
 - [X] model_main.py : training : 2019.10.12-2019.10.14
 - [X] export_inference_graph.py : 2019.10.15
-- [ ] test : object_detection_run.py file 수정을 통한 test 과정 : 2019.10.15
+- [X] test : object_detection_run.py file 수정을 통한 test 과정 : 2019.10.15
 
 ### Reference
 > [tensorflow official object-detection models](https://github.com/tensorflow/models/tree/master/research/object_detection)
