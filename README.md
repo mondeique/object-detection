@@ -76,11 +76,24 @@ $ python model_main.py --pipeline_config_path=pipeline.config --model_dir=traini
        |--- image2.jpg
        |---
        ...
+  |--- test_images
+       |--- test_image1.jpg
+       |--- test_image2.jpg
+       |---
+       ...
+  |
+  |--- my_network_output
+       |--- saved_model
+       |--- pipeline.config
+       |--- frozen_inference_graph.pb
+       |--- model.ckpt
+       |--- checkpoint
   |--- label_map
        |--- mscoco_label_map.pbtxt (for test)
   |--- test_result
-       |--- faster_rcnn_resnet101
-       |--- ssd_mobilenet_v1
+       |--- my_network_for_customized
+       |--- faster_rcnn_resnet101 (for test)
+       |--- ssd_mobilenet_v1 (for test)
        ...
   |     
   |--- training
@@ -88,11 +101,11 @@ $ python model_main.py --pipeline_config_path=pipeline.config --model_dir=traini
        |--- model.ckpt 
        |--- object-detection.pbtxt
   |--- generate_tfrecord.py
+  |--- export_inference_graph.py
   |--- model_main.py
   |--- pipeline.config
   |--- object_detection_run.py (for test)
-  |--- split_labels.ipynb
-       
+  |--- split_labels.ipynb   
   ```
 ## Test Result
 ### Minimal Working Test 
@@ -114,8 +127,11 @@ $ tensorboard --logdir='training'
 $ python export_inference_graph.py --input_type=image_tensor --pipeline_config_path=pipeline.config \
 --trained_checkpoint_prefix=training/model.ckpt-** --output_directory=output/
 ```
+```
+$ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
+```
 #### Batch Size : 24 / number of steps : 100000
-- 48시간 : 25000번 
+> 72h : about 40000 steps..
 ### ssd mobilenet v1 for 8600장 handbag dataset
 __TO BE ADDED__
 ## TODO 
@@ -130,7 +146,7 @@ __TO BE ADDED__
 - [X] pipeline.config to ssd mobilenet으로 변경 : 2019.10.12
 - [X] pbtxt 생성 : 2019.10.12
 - [X] model_main.py : training : 2019.10.12-2019.10.14
-- [ ] export_inference_graph.py : 2019.10.15
+- [X] export_inference_graph.py : 2019.10.15
 - [ ] test : object_detection_run.py file 수정을 통한 test 과정 : 2019.10.15
 
 ### Reference
