@@ -136,9 +136,9 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ![result_img1](./test_result/ssd_mobilenet_v1_output/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1_output/result_img3.jpg)
 #### Batch Size : 16 / number of steps : 20000
->
+> 중간에 core dumped error로 인해 학습이 중지되었다. 
 ### ssd mobilenet v1 for 8600장 handbag dataset
-__TOBEADDED__
+> 위의 학습과 결과가 비슷해 넣지 않았다. tensorboard로 확인해보았다.
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
