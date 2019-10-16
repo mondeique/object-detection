@@ -49,8 +49,8 @@ $ python setup.py install
 2. download image from s3 with [data-explorer](https://github.com/mondeique/data-explorer)
 3. python generate_tfrecord.py 
 ```
-$ python generate_tfrecord.py --csv_input=data/training_bag_csv --output_path=data/train.record --image_path=images/
-$ python generate_tfrecord.py --csv_input=data/test_bag_csv --output_path=data/test.record --image_path=images/
+$ python generate_tfrecord.py --csv_input=data/training_bag_csv --output_path=data/train.record --image_dir=images/
+$ python generate_tfrecord.py --csv_input=data/test_bag_csv --output_path=data/test.record --image_dir=images/
 ```
 
 4. change pipeline.config with selected network
