@@ -100,10 +100,10 @@ $ python model_main.py --pipeline_config_path=pipeline.config --model_dir=traini
        |        
        |--- model.ckpt 
        |--- object-detection.pbtxt
+       |--- pipeline.config
   |--- generate_tfrecord.py
   |--- export_inference_graph.py
   |--- model_main.py
-  |--- pipeline.config
   |--- object_detection_run.py (for test)
   |--- split_labels.ipynb   
   ```
