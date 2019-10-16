@@ -153,7 +153,7 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 - [X] model_main.py : training : 2019.10.12-2019.10.14
 - [X] export_inference_graph.py : 2019.10.15
 - [X] test : object_detection_run.py file 수정을 통한 test 과정 : 2019.10.15
-- [ ] error analysis : bounding box feature xmin/xmax/ymin/ymax : 2019.10.16
+- [X] error analysis : bounding box feature xmin/xmax/ymin/ymax : 2019.10.16
 
 ### Reference
 > [tensorflow official object-detection models](https://github.com/tensorflow/models/tree/master/research/object_detection)
