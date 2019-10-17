@@ -59,8 +59,8 @@ $ python generate_tfrecord.py --csv_input=data/test_bag_csv --output_path=data/t
 > item - id - class
 6. python model_main.py
 ```
-$ python model_main.py --pipeline_config_path=pipeline.config --model_dir=training/ --num_train_steps=${NUM_TRAIN_STEPS} \
-    --sample_1_of_n_eval_examples=$SAMPLE_1_OF_N_EVAL_EXAMPLES \
+$ python model_main.py --pipeline_config_path=training/pipeline.config --model_dir=training/ \
+    --num_train_steps=${NUM_TRAIN_STEPS} --sample_1_of_n_eval_examples=$SAMPLE_1_OF_N_EVAL_EXAMPLES \
     --alsologtostderr
 ```
 ## Data Structure
@@ -120,9 +120,11 @@ $ python model_main.py --pipeline_config_path=pipeline.config --model_dir=traini
 ![result_img1](./test_result/ssd_mobilenet_v1/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1/result_img3.jpg)
 ### Customized Test
+- tensorboard 로 현재 학습되고 있는 images와 loss를 확인할 수 있다. 
 ```
 $ tensorboard --logdir='training'
 ```
+- inference graph를 뽑아 test를 위한 준비를 한다.
 ```
 $ python export_inference_graph.py --input_type=image_tensor --pipeline_config_path=pipeline.config \
 --trained_checkpoint_prefix=training/model.ckpt-** --output_directory=output/
@@ -135,10 +137,11 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ### ssd mobilenet v1 for 8600장 handbag dataset
 ![result_img1](./test_result/ssd_mobilenet_v1_output/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1_output/result_img3.jpg)
-#### Batch Size : 16 / number of steps : 20000
-> 중간에 core dumped error로 인해 학습이 중지되었다. 
-### ssd mobilenet v1 for 8600장 handbag dataset
-> 위의 학습과 결과가 비슷해 넣지 않았다. tensorboard로 확인해보았다.
+__tfrecord 변환 과정에서 생긴 error였다.__
+#### Batch Size : 16 / number of steps : 40000
+> 48h : about 40000 steps 
+### ssd mobilenet v1 for 1000장 handbag dataset
+> error 해결하고 나온 첫 성공결과이다.
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
