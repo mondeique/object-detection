@@ -137,7 +137,7 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ### ssd mobilenet v1 for 8600장 handbag dataset
 ![result_img1](./test_result/ssd_mobilenet_v1_output/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1_output/result_img3.jpg)
-__tfrecord 변환 과정에서 생긴 error였다.__
+- __tfrecord 변환 과정에서 생긴 error였다.__
 #### Batch Size : 16 / number of steps : 40000
 > 48h : about 40000 steps 
 ### ssd mobilenet v1 for 1000장 handbag dataset
