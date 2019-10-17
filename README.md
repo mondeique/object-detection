@@ -71,7 +71,7 @@ $ python model_main.py --pipeline_config_path=training/pipeline.config --model_d
   |    |--- training_bag_csv
   |    |--- train.record
   |    |--- test.record
-  |--- images
+  |--- images (for training/evaluation)
        |--- image1.jpg
        |--- image2.jpg
        |---
@@ -89,13 +89,13 @@ $ python model_main.py --pipeline_config_path=training/pipeline.config --model_d
        |--- model.ckpt
        |--- checkpoint
   |--- label_map
-       |--- mscoco_label_map.pbtxt (for test)
+       |--- mscoco_label_map.pbtxt (for minimal working)
   |--- test_result
        |--- my_network_for_customized
-       |--- faster_rcnn_resnet101 (for test)
-       |--- ssd_mobilenet_v1 (for test)
+       |--- faster_rcnn_resnet101 (for minimal working)
+       |--- ssd_mobilenet_v1 (for minimal working)
        ...
-  |     
+  |--- utils (for import label_map_util)    
   |--- training
        |        
        |--- model.ckpt 
