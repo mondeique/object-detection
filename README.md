@@ -141,9 +141,9 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 #### Batch Size : 16 / number of steps : 40000
 > about 36h : 40000 steps 
 ### ssd mobilenet v1 for 1000장 handbag dataset
-> error 해결하고 나온 첫 성공결과이다.
 ![result_img1](./test_result/ssd_mobilenet_v1_output_eren/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1_output_eren/result_img3.jpg)
+- error 해결하고 나온 첫 성공결과
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
