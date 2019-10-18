@@ -18,3 +18,12 @@ data/*.record
 training/checkpoint
 training/events.*
 training/graph.*
+
+# output_file
+*_output/
+
+# reference file coco
+*_coco_*/
+
+# utils
+utils/
