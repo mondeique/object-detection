@@ -144,6 +144,7 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ![result_img1](./test_result/ssd_mobilenet_v1_output_eren/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1_output_eren/result_img3.jpg)
 - error 해결하고 나온 첫 성공결과
+- 손잡이 제외한 부분을 뽑아내기 위해서는 다시 cropped 과정을 거쳐야 한다!
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
