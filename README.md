@@ -139,9 +139,11 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ![result_img1](./test_result/ssd_mobilenet_v1_output/result_img3.jpg)
 - __tfrecord 변환 과정에서 생긴 error였다.__
 #### Batch Size : 16 / number of steps : 40000
-> 48h : about 40000 steps 
+> about 36h : 40000 steps 
 ### ssd mobilenet v1 for 1000장 handbag dataset
 > error 해결하고 나온 첫 성공결과이다.
+![result_img1](./test_result/ssd_mobilenet_v1_output_eren/result_img2.jpg)
+![result_img1](./test_result/ssd_mobilenet_v1_output_eren/result_img3.jpg)
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
