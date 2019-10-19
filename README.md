@@ -132,19 +132,21 @@ $ python export_inference_graph.py --input_type=image_tensor --pipeline_config_p
 ```
 $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 ```
-#### Batch Size : 24 / number of steps : 100000
-> 72h : about 40000 steps
-### ssd mobilenet v1 for 8600장 handbag dataset
+#### ssd mobilenet v1 for 8549장 handbag dataset (handle 포함)
 ![result_img1](./test_result/ssd_mobilenet_v1_output/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1_output/result_img3.jpg)
 - __tfrecord 변환 과정에서 생긴 error였다.__
-#### Batch Size : 16 / number of steps : 40000
-> about 36h : 40000 steps 
-### ssd mobilenet v1 for 1000장 handbag dataset
+- Batch Size : 24 / number of steps : 100000
+> 72h : about 40000 steps
+#### ssd mobilenet v1 for 1000장 handbag dataset (handle 포함)
 ![result_img1](./test_result/ssd_mobilenet_v1_output_eren/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1_output_eren/result_img3.jpg)
 - error 해결하고 나온 첫 성공결과
-- 손잡이 제외한 부분을 뽑아내기 위해서는 다시 cropped 과정을 거쳐야 한다!
+- __손잡이 제외한 부분을 뽑아내기 위해서는 다시 cropped 과정을 거쳐야 한다!__
+- Batch Size : 16 / number of steps : 40000
+> about 36h : 40000 steps 
+#### ssd mobilenet v1 for 8549장 handbag dataset (handle 포함)
+__TO BE ADDED__
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
