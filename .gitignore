@@ -18,6 +18,7 @@ data/*.record
 training/checkpoint
 training/events.*
 training/graph.*
+training/eval_0
 
 # output_file
 *_output/
