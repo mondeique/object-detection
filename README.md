@@ -145,7 +145,7 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 - __손잡이 제외한 부분을 뽑아내기 위해서는 다시 cropped 과정을 거쳐야 한다!__
 - Batch Size : 16 / number of steps : 40000
 > about 36h : 40000 steps 
-#### ssd mobilenet v1 for 8549장 handbag dataset (handle 포함)
+#### ssd mobilenet v1 for 1000장 handbag dataset (handle 제외)
 __TO BE ADDED__
 ## TODO 
 
