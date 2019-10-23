@@ -16,7 +16,7 @@ from utils import visualization_utils as vis_util
 
 
 # Pre trained graph model PATH
-MODEL_NAME = 'ssd_mobilenet_v1_output'
+MODEL_NAME = 'ssd_mobilenet_v1_1000_16_30000_no_handle_output'
 PATH_TO_CKPT = os.path.join(MODEL_NAME, 'frozen_inference_graph.pb')
 # Path to label map
 PATH_TO_LABELS = os.path.join('training', 'object-detection.pbtxt')
