@@ -146,7 +146,12 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 - Batch Size : 16 / number of steps : 40000
 > about 36h : 40000 steps 
 #### ssd mobilenet v1 for 1000장 handbag dataset (handle 제외)
-__TO BE ADDED__
+![result_img1](./test_result/ssd_mobilenet_v1_1000_16_30000/result_img2.jpg)
+![result_img1](./test_result/ssd_mobilenet_v1_1000_16_30000/result_img3.jpg)
+- 사람이 들고 있는 사진이 없었기 때문에 그런 경우는 찾지 못하였음.
+- 손잡이 제외 사람이 들고 있는 사진까지 포함하면 더 이상 건드리지 않아도 됨
+- Batch size : 16 / number of steps : 30000
+> about 30h : 30000 steps
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
