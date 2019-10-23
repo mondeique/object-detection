@@ -146,6 +146,8 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 - Batch Size : 16 / number of steps : 40000
 > about 36h : 40000 steps 
 #### ssd mobilenet v1 for 1000장 handbag dataset (handle 제외)
+![result_img1](./test_result/ssd_mobilenet_v1_1000_16_30000_no_handle/loss_16_30000.png)
+- 수렴이 되는 느낌은 나지만 안정적으로 수렴이 되진 않는다.
 ![result_img1](./test_result/ssd_mobilenet_v1_1000_16_30000_no_handle/result_img2.jpg)
 ![result_img1](./test_result/ssd_mobilenet_v1_1000_16_30000_no_handle/result_img3.jpg)
 - 사람이 들고 있는 사진이 없었기 때문에 그런 경우는 제대로 가방을 찾지 못하였음.
