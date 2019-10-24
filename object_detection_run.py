@@ -102,6 +102,10 @@ for i, image_path in enumerate(TEST_IMAGE_PATHS):
     image_np_expanded = np.expand_dims(image_np, axis=0)
     # Actual detection.
     output_dict = run_inference_for_single_image(image_np, detection_graph)
+    top = output_dict['detection_boxes'][0][0]
+    left = output_dict['detection_boxes'][0][1]
+    bottom = output_dict['detection_boxes'][0][2]
+    right = output_dict['detection_boxes'][0][3]
     # Visualization of the results of a detection.
     vis_util.visualize_boxes_and_labels_on_image_array(
       image_np,
