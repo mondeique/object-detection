@@ -169,6 +169,7 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 - [X] export_inference_graph.py : 2019.10.15
 - [X] test : object_detection_run.py file 수정을 통한 test 과정 : 2019.10.15
 - [X] error analysis : bounding box feature xmin/xmax/ymin/ymax : 2019.10.16
+- [ ] crop image & upload to s3 : object detection boxes 정보를 이용하여 image cropping
 
 ### Reference
 > [tensorflow official object-detection models](https://github.com/tensorflow/models/tree/master/research/object_detection)
