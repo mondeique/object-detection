@@ -106,6 +106,9 @@ for i, image_path in enumerate(TEST_IMAGE_PATHS):
     left = output_dict['detection_boxes'][0][1]
     bottom = output_dict['detection_boxes'][0][2]
     right = output_dict['detection_boxes'][0][3]
+    # # color-extraction 을 위한 code
+    # cvt_img = cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB)
+    # cropped_img = cvt_img[top:bottom, left:right]
     # Visualization of the results of a detection.
     vis_util.visualize_boxes_and_labels_on_image_array(
       image_np,
