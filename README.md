@@ -155,9 +155,12 @@ $ CUDA_VISIBLE_DEVICES=0 python object_detection_run.py
 - Batch size : 16 / number of steps : 30000
 > about 30h : 30000 steps
 #### ssd mobilenet v1 for 1500장 handbag dataset (handle 제외)
-- __TO BE ADDED_
-- Batch size : 16 / number of steps : 30000
-> 2019-11-06 14:40 start
+![result_img1](./test_result/ssd_mobilenet_v1_1500_16_15000_people_no_handle/result_img7.jpg)
+![result_img1](./test_result/ssd_mobilenet_v1_1500_16_15000_people_no_handle/result_img10.jpg)
+- 사람이 들고 있는 사진까지 포함하였기 때문에 잘 찾는 것을 확인함.
+![result_img1](./test_result/ssd_mobilenet_v1_1500_16_15000_people_no_handle/result_img13.jpg)
+- 다중 가방 포함된 Data 부족으로 인한 handbag detection 불가 : 추가 발전 필요
+- Batch size : 16 / number of steps : 15000
 ## TODO 
 
 - [X] dev env setting (ubuntu 18.04) : decide on 2019.10.09
